@@ -1,5 +1,11 @@
 package org.dhaval.java.algo.trie;
 
+/**
+ * Store the vocabulary in Trie data structure. Prevent duplicate insertion.
+ * 
+ * @author dhaval
+ *
+ */
 public class TrieVocabulary {
 	private TrieNode root = null;
 	
