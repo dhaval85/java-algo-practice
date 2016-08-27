@@ -12,27 +12,6 @@ import org.dhaval.java.algo.TreeNode;
  *
  */
 public class LevelOrderTraversal {
-	
-	public static void main(String[] args) {
-		/*
-		 *					1
-		 *			2				3
-		 *		4		5		6		7
-		 */
-		
-		/* Generating an input tree */
-		TreeNode root = new TreeNode(1);
-		
-		root.setLeft(new TreeNode(2));
-		root.setRight(new TreeNode(3));
-		root.getLeft().setLeft(new TreeNode(4));
-		root.getLeft().setRight(new TreeNode(5));
-		root.getRight().setLeft(new TreeNode(6));
-		root.getRight().setRight(new TreeNode(7));
-		
-		levelOrderTraversal(root);
-	}
-	
 	/**
 	 * Recursive function to print the tree in BFS fashion.
 	 * 
@@ -72,5 +51,25 @@ public class LevelOrderTraversal {
 		
 		/* call the function recursively */
 		levelOrderTraversal(queue);
+	}
+	
+	public static void main(String[] args) {
+		/*
+		 *					1
+		 *			2				3
+		 *		4		5		6		7
+		 */
+		
+		/* Generating an input tree */
+		TreeNode root = new TreeNode(1);
+		
+		root.setLeft(new TreeNode(2));
+		root.setRight(new TreeNode(3));
+		root.getLeft().setLeft(new TreeNode(4));
+		root.getLeft().setRight(new TreeNode(5));
+		root.getRight().setLeft(new TreeNode(6));
+		root.getRight().setRight(new TreeNode(7));
+		
+		levelOrderTraversal(root);
 	}
 }
