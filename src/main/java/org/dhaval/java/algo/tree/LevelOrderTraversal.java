@@ -17,7 +17,7 @@ public class LevelOrderTraversal {
 		/*
 		 *					1
 		 *			2				3
-		 *		4		5		
+		 *		4		5		6		7
 		 */
 		
 		/* Generating an input tree */
@@ -27,6 +27,8 @@ public class LevelOrderTraversal {
 		root.setRight(new TreeNode(3));
 		root.getLeft().setLeft(new TreeNode(4));
 		root.getLeft().setRight(new TreeNode(5));
+		root.getRight().setLeft(new TreeNode(6));
+		root.getRight().setRight(new TreeNode(7));
 		
 		levelOrderTraversal(root);
 	}
