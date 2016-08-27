@@ -10,6 +10,11 @@ public class TreeNode {
 	private int data;
 	private TreeNode left = null;
 	private TreeNode right = null;
+	
+	public TreeNode(int data){
+		this.data = data;
+	}
+	
 	public int getData() {
 		return data;
 	}
