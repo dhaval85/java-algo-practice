@@ -36,6 +36,11 @@ public class SwapLinkedListPairWise {
 		Utility.printSinglyLinkedList(head);
 	}
 	
+	/**
+	 * Swap the pairs in the given singly linked list.
+	 * 
+	 * @param head
+	 */
 	public static void swapThePairs(LinkedListNode head){
 		/* Return if no head defined */
 		if(head == null){

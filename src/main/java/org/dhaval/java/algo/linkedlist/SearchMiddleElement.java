@@ -29,6 +29,12 @@ public class SearchMiddleElement {
 		System.out.println("Middle Element is : " + findMiddleElement(head));
 	}
 	
+	/**
+	 * Find the middle element from the given linked list. 
+	 * 
+	 * @param head
+	 * @return
+	 */
 	public static int findMiddleElement(LinkedListNode head){
 		if(head == null){
 			return -1;
