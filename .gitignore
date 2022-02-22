@@ -1,5 +1,9 @@
+/shelf/
+/workspace.xml
 /target/
 /bin/
 .classpath
 .project
 .settings
+.idea
+/java-algo-practice.iml
